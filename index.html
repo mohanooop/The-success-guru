@@ -1,5 +1,173 @@
-<!DOCTYPE html>
-<html lang="hi">
+<!DOCTYPE html><html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Success Guru - Customized</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #673ab7, #512da8);
+      color: #fff;
+      padding: 1rem 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    #hero {
+      background: url('https://source.unsplash.com/1600x400/?success') center/cover no-repeat;
+      text-align: center;
+      padding: 5rem 1rem;
+      color: #fff;
+    }
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+    #hero .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #ff4081;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .video-wrapper {
+      margin-top: 2rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .video-wrapper iframe {
+      width: 100%;
+      height: 315px;
+    }
+    #pricing h2, #faq h2 {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      color: #673ab7;
+    }
+    .card button {
+      background: #673ab7;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .faq-item {
+      margin: 1rem 0;
+    }
+    .faq-question {
+      background: #eee;
+      border: none;
+      width: 100%;
+      padding: 0.8rem;
+      text-align: left;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .faq-answer {
+      display: none;
+      padding: 0.5rem;
+      background: #f1f1f1;
+      border-radius: 5px;
+    }
+    .faq-answer.open {
+      display: block;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">TheSuccessGuru</a>
+      <nav>
+        <a href="#courses">Courses</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>  <section id="hero">
+    <div class="container">
+      <h1>Welcome To TheSuccessGuru!</h1>
+      <p>Let's Upgrade Your Skills & Earnings</p>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+      </div>
+      <a href="#pricing" class="btn">Start Now</a>
+    </div>
+  </section>  <section id="pricing" class="container">
+    <h2>Pick Your Package</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mini Package</h3>
+        <p>₹399 – Affiliate & Instagram Mastery</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>  <section id="faq" class="container">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is TheSuccessGuru?</button>
+      <div class="faq-answer">We are an ed-tech platform ...</div>
+    </div>
+  </section>  <footer id="contact">
+    <p>Contact us: +91 77798 26401 | prakashkumarsharma936@gmail.com</p>
+    <p>© 2025 TheSuccessGuru. All rights reserved.</p>
+  </footer>  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.nextElementSibling.classList.toggle('open');
+      });
+    });
+  </script></body>
+</html>
